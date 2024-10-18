@@ -38,8 +38,7 @@
 }
 
 .extra-network-pane {
-	height: 60vh;
-	min-height: unset;
+	height: calc(100vh - 175px);
 }
 
 @media (min-width: 3146px) {
