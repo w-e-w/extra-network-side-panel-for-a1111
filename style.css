@@ -125,7 +125,7 @@
 [restore-separate-extra-network] [sd-enr-id="img2img_generation_tab"] {
 	grid-column-start: 1;
 	grid-column-end: 1;
-	width: 40vw;
+	width: calc(100vw - 140px - 272px * var(--card-count));
 	padding-top: 20px;
 }
 
@@ -139,3 +139,32 @@
     margin-bottom: 0em;
 	display: none;
 }
+
+[restore-separate-extra-network] {
+	--card-count: 1;
+}
+
+@media (min-width: 1500px) {
+    [restore-separate-extra-network] {
+        --card-count: 2;
+    }
+}
+
+@media (min-width: 2180px) {
+    [restore-separate-extra-network] {
+        --card-count: 3;
+    }
+}
+
+@media (min-width: 2860px) {
+    [restore-separate-extra-network] {
+        --card-count: 4;
+    }
+}
+
+@media (min-width: 3540px) {
+    [restore-separate-extra-network] {
+        --card-count: 5;
+    }
+}
+
